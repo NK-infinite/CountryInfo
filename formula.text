@@ -1,0 +1,32 @@
+percentage to value:- 
+Value = (Percentage / 100) * Total Value
+
+
+const financeIndicators = [
+  "GC.XPN.TOTL.GD.ZS",     // Government expenditure (% of GDP)
+  "SH.XPD.CHEX.GD.ZS",     // Health expenditure (% of GDP)
+  "SE.XPD.TOTL.GD.ZS",     // Education expenditure (% of GDP)
+  "MS.MIL.XPND.GD.ZS",     // Military expenditure (% of GDP)
+  "GC.REV.XGRT.GD.ZS",     // Revenue excluding grants (% of GDP)
+  "GC.REV.GRNT.GD.ZS",     // Grants and other revenue (% of GDP)
+  "GC.CAL.FCONS.GD.ZS",    // Govt final consumption expenditure (% of GDP)
+  "GC.INT.TOTL.GD.ZS",     // Interest payments (% of GDP)
+  "NE.GDI.TOTL.ZS",        // Gross capital formation (% of GDP)
+  "GC.DOD.TOTL.GD.ZS",     // Central government debt (% of GDP)
+  "SH.SPR.PCAP.ZS"         // Social protection expenditure (% of GDP)
+];
+
+
+- Government expenditure 
+- Total government revenue
+- Tax revenue
+- Health expenditure
+- Education expenditure 
+- Military expenditure 
+- Revenue excluding grant
+- Grants and other revenu
+- Govt final consumption expenditure
+- Interest payments 
+- Gross capital formation
+- Central government debt
+- Social protection expenditure

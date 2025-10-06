@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run on Pixel 9",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/react-native/cli.js",
+      "args": ["run-android"],
+      "console": "integratedTerminal",
+      "env": {
+        "ANDROID_AVD_HOME": "Pixel_9_Pro_API_35"
+      }
+    },
+    {
+      "name": "Run on Nexus 4",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/react-native/cli.js",
+      "args": ["run-android"],
+      "console": "integratedTerminal",
+      "env": {
+        "ANDROID_AVD_HOME": "Nexus_4"
+      }
+    }
+  ]
+}
