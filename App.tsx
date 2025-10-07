@@ -4,7 +4,7 @@ import  Navigation   from "./CountryInfoApp/Navigation/Navigation";
 function App() {
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor={'#4057a8ff'}  />
+<StatusBar barStyle="light-content" backgroundColor="#4057a8ff" />
       <Navigation />
     </View>
   );

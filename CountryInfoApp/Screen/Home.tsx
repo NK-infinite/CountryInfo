@@ -8,6 +8,7 @@ import { RootStackParamList } from '../Navigation/Navigation';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Dimensions } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { SafeAreaView } from 'react-native-safe-area-context';
 const HomeScreen = () => {
 
     const screenWidth = Dimensions.get("window").width;
@@ -44,6 +45,7 @@ const HomeScreen = () => {
     }
 
     return (
+        <SafeAreaView style={{ flex: 1 , backgroundColor: '#4057a8ff' }}>
         <View style={{ flex: 1, backgroundColor: 'white' }}>
             <View style={{ backgroundColor: '#4057a8ff' }}>
                 <View style={styles.header}>
@@ -121,12 +123,13 @@ const HomeScreen = () => {
                 />
             </View>
         </View>
+        </SafeAreaView>
     )
 }
 const styles = StyleSheet.create({
     header: {
         backgroundColor: '#4057a8ff',
-        marginTop: 5,
+        marginTop: 0,
         justifyContent: 'center',
         flexDirection: 'row',
         marginBottom: 5,

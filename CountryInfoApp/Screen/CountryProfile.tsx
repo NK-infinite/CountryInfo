@@ -102,6 +102,16 @@ const CountryProfileScreen = ({ route }: { route: getPorp }) => {
             </TouchableOpacity>
               </View>
 
+
+
+    {/* <TouchableOpacity 
+    style={styles.mapButton}
+              onPress={() => Linking.openURL(`https://www.${countryData?.name?.common}.gov${countryData?.tld}`)}
+    >
+    <Icon name="globe" size={18} color="#fff" style={{ marginRight: 8 }} />
+    <Text style={styles.mapButtonText}>Official Website</Text> 
+      </TouchableOpacity> */}
+
             {/* Flag & Coat of Arms */}
             <View style={styles.infoBoxRow}>
               <View style={styles.centerBox}>
@@ -121,6 +131,7 @@ const CountryProfileScreen = ({ route }: { route: getPorp }) => {
                 />
               </View>
             </View>
+           
 
 
             <View style={styles.infoBox}>
@@ -174,9 +185,7 @@ const CountryProfileScreen = ({ route }: { route: getPorp }) => {
                 <Text style={styles.bold}>Driving Side:</Text> {countryData?.car?.side === 'left' ? "Left-hand traffic" : "Right-hand traffic"}
               </Text>
             </View>
-
           </View>
-
         </View>
       }
     </ScrollView>
