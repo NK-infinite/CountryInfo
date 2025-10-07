@@ -95,7 +95,7 @@ const CountryProfileScreen = ({ route }: { route: getPorp }) => {
 
             <TouchableOpacity
               style={styles.mapButton}
-              onPress={() => Linking.openURL('https://en.wikipedia.org/wiki/' + countryData?.name?.common)}
+              onPress={() => Linking.openURL(`https://en.wikipedia.org/wiki/${countryData?.name?.common}`)}
               >
               <Icon name="wikipedia-w" size={18} color="#fff" style={{ marginRight: 8 }} />
               <Text style={styles.mapButtonText}>wikipedia</Text>
