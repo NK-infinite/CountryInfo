@@ -83,13 +83,24 @@ const CountryProfileScreen = ({ route }: { route: getPorp }) => {
           </View>
 
           <View style={styles.container}>
+          <View style={{ flexDirection:'row' , justifyContent:'space-around'}}>
+
             <TouchableOpacity
               style={styles.mapButton}
               onPress={() => Linking.openURL(countryData?.maps?.googleMaps)}
-            >
+              >
               <Icon name="map-marker" size={18} color="#fff" style={{ marginRight: 8 }} />
               <Text style={styles.mapButtonText}>Show in Google Maps</Text>
             </TouchableOpacity>
+
+            <TouchableOpacity
+              style={styles.mapButton}
+              onPress={() => Linking.openURL('https://en.wikipedia.org/wiki/' + countryData?.name?.common)}
+              >
+              <Icon name="wikipedia-w" size={18} color="#fff" style={{ marginRight: 8 }} />
+              <Text style={styles.mapButtonText}>wikipedia</Text>
+            </TouchableOpacity>
+              </View>
 
             {/* Flag & Coat of Arms */}
             <View style={styles.infoBoxRow}>

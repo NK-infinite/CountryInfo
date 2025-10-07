@@ -8,7 +8,6 @@ import { RootStackParamList } from '../Navigation/Navigation';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { Dimensions } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 const HomeScreen = () => {
 
     const screenWidth = Dimensions.get("window").width;
@@ -60,7 +59,7 @@ const HomeScreen = () => {
                             style={{ flex: 1 }}
                         />
                         <TouchableOpacity onPress={fetch}>
-                            <FontAwesome5 name="search" size={20} color="#0033E7" style={{ marginRight: 10 }} solid={false} />
+                            <Icon name='search' size={20} color="#0033E7" style={{ marginRight: 10 }} />
                         </TouchableOpacity>
                     </View>
                 </View>
@@ -109,7 +108,7 @@ const HomeScreen = () => {
 
                                 </TouchableOpacity>
                                 <Image
-                                    source={{ uri: `${item?.flags?.png}` }}
+                                    source={{ uri:`${item?.flags?.png}`}}
                                     style={{ width: boxWidth / 1.3, height: boxWidth / 2, marginHorizontal: 0, marginTop: 0, borderRadius: 15, marginBottom: 10 }}
                                     resizeMode="cover"
                                 />
@@ -118,7 +117,6 @@ const HomeScreen = () => {
                                 <Text style={styles.CountryBoxtext}><Text style={{ fontWeight: '800' }}>Region: </Text>{`${item?.region}`} </Text>
                         </TouchableOpacity>
                             </View>
-
                     )}
                 />
             </View>

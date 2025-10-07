@@ -1,10 +1,7 @@
 
-const getHumandevlopment = async (ID: string) => {
-   
+const getHumandevlopment = async (ID: string) => { 
     try {
-        const indicators = [
-           
-
+        const indicators = [  
 
             // Population
             "SP.POP.TOTL",

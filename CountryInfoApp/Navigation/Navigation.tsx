@@ -6,7 +6,6 @@ import DetailsScreen from '../Screen/DetailsScreen';
 // import DetailsScreen from '../Screen/DetailsScreen';
 
 
-
 export type RootStackParamList = {
     HomeScreen: undefined;
     DetailsScreen: { name: string , Id:string, Officialname: string };  
